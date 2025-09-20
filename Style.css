@@ -1,17 +1,22 @@
 ﻿/* Osnovno */
-body {
+html,body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     background: linear-gradient(135deg, #19547b,#ffd89b, #f00);
     color: #333;
+    padding:0;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* Navigacija */
 nav {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.6);
     padding: 30px 0;
     box-shadow: 0 25px 25px rgba(0,0,0,0.2);
     border-bottom: 2px solid #000;
+    width: 100%;
 }
     nav ul li {
         position: relative; /* bitno za dropdown */
@@ -105,7 +110,7 @@ nav {
 }
 
 .zadatak {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.8);
     border-radius: 20px;
     padding: 20px;
     width: 250px;
@@ -170,3 +175,4 @@ nav {
         .akcije i:hover {
             color: #ffd89b;
         }
+
