@@ -1,0 +1,589 @@
+﻿/* Osnovni reset i stilovi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #b2a7a7;
+    color: #333;
+    line-height: 1.5;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigacija */
+header {
+    background-color: #222;
+    padding: 25px 20px;
+}
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+            header nav ul li a {
+                color: #cbf2f1;
+                font-weight: bold;
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 200;
+                transition: color 0.3s;
+            }
+
+                header nav ul li a:hover {
+                    color: #ff6b6b;
+                }
+
+/* Hero sekcija (na početnoj) */
+.hero {
+    background:url('dimaa.jpg');
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    border-radius:15px;
+    border-color:black;
+    border-width:15px;
+    display:flow;
+}
+
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        font-weight: 700;
+        /* optional extra shadow to make fallback appear stronger on other browsers */
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        font-weight: 600;
+        /* optional extra shadow to make fallback appear stronger on other browsers */
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+
+.cta-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background 0.3s;
+    font-weight: 450;
+    /* optional extra shadow to make fallback appear stronger on other browsers */
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+    .cta-btn:hover {
+        background-color: #e55a5a;
+    }
+
+/* Sekcije sa karticama */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+    font-size:20px;
+    
+}
+    .container h2 {
+        font-weight: 800;
+        /* optional extra shadow to make fallback appear stronger on other browsers */
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+
+    }
+    #sekcija{
+        font-size:35px;
+        margin:50px;
+    }
+
+.grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+
+    }
+
+    .card h3 {
+        margin: 20px;
+        font-size: 1.4em;
+        font-size: 25px;
+        font-weight: 800;
+        /* optional extra shadow to make fallback appear stronger on other browsers */
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+
+    .card p {
+        margin: 0 20px 20px;
+        font-size: 1em;
+
+    }
+
+    .card a.btn {
+        display: block;
+        margin: 0 20px 20px;
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-radius: 4px;
+        transition: background 0.3s;
+    }
+
+        .card a.btn:hover {
+            background-color: #444;
+        }
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 30px 0;
+}
+
+    footer p {
+        margin: 0;
+        font-size: 0.9em;
+    }
+
+/* Novi deo za tekst na početnoj stranici */
+.intro-text {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .intro-text h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .intro-text p {
+        font-size: 1.1em;
+        color: #555;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .intro-text .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+/* ---- Add the following at the end of your Style.css ---- */
+
+/* Page wrapper to center the card on the page */
+.omeni {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 20px;
+}
+
+/* White card that matches the screenshot */
+.omeni-card {
+   
+    height: 1000px;
+    background: #ffffff;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 14px;
+    padding: 42px 48px;
+    box-shadow: 0 12px 30px rgba(17, 17, 17, 0.12);
+    text-align: center;
+    color: #222;
+    margin: 20px 0;
+}
+
+/* Title */
+.omeni-title {
+    font-family:'Times New Roman';
+    font-weight:bold;
+    font-size: 45px;
+    margin: 0 0 18px 0;
+    font-weight: 700;
+    color: #333;
+    
+}
+
+/* Circular avatar with subtle ring */
+.omeni-avatar {
+    width: 300px;
+    height: 300px;
+    margin: 6px auto 18px auto;
+    border-radius: 50%;
+    position: relative;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+    .omeni-avatar img {
+        
+        
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        background: #fff;
+    }
+
+/* Main text */
+.omeni-text p {
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    color: #444;
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 12px 0;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact heading */
+.contact-title {
+    margin-top: 22px;
+    margin-bottom: 8px;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Contact links and details */
+.contact-list p {
+    margin: 6px 0;
+    color: #444;
+    font-size: 20px;
+    text-decoration:underline;
+}
+
+.contact-list a {
+    color: #1a4b9b;
+    text-decoration: none;
+    pointer-events: auto;
+}
+
+    .contact-list a:hover {
+        text-decoration: underline;
+    }
+
+/* Small screens */
+@media (max-width: 520px) {
+    .omeni-card {
+        padding: 28px 20px;
+    }
+
+    .omeni-avatar {
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+    }
+
+        .omeni-avatar img {
+            width: 120px;
+            height: 120px;
+        }
+}
+/* Add at the top or end of appdata/Style.css */
+
+/* Ensure full viewport height and column layout */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
+}
+
+/* Main area grows to fill available space, pushing footer down */
+main {
+    flex: 1 0 auto;
+}
+
+/* Prevent footer from shrinking */
+footer {
+    flex-shrink: 0;
+}
+/* Crop avatar to show više gornjeg-levog dela */
+.omeni-avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden; /* obavezno: skriva ivice slike izvan kruga */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .omeni-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* fill krug, zadrži proporcije */
+        object-position: 15% 20%; /* horizontal (0% = levo, 100% = desno), vertical (0% = gore, 100% = dole) */
+        border-radius: 50%; /* i dalje kružno */
+        transform: scale(1.03); /* opcionalno: blago zumira da se sakrije donji-desni */
+        transition: transform 180ms ease;
+    }
+/* Ensure links are clickable and not covered by overlays */
+.omeni-card {
+    position: relative; /* positioning context and stacking context */
+    z-index: 0;
+}
+
+.contact-list a {
+    position: relative;
+    z-index: 2; /* bring link to front */
+    pointer-events: auto; /* allow clicks */
+    cursor: pointer;
+    color: #1a4b9b;
+    text-decoration: underline;
+}
+/* Novi stil za dugme za preuzimanje CV-a */
+.cv-download {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cv-btn {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color:black;
+    font-weight:bold;
+    font-style:italic;
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+    .cv-btn:hover {
+        background-color: #e55a5a;
+    }
+/* ===== C++ Zadaci (accordion) ===== */
+.tasks-page .tasks-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.tasks-toolbar {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 30px;
+}
+
+.task-search {
+    flex: 1 1 360px;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+    .task-search:focus {
+        border-color: #888;
+    }
+
+.task-chips {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+    .chip:hover {
+        background: #f7f7f7;
+    }
+
+.task-section {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+    margin: 16px 0 28px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.section-header {
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(180deg,#fafafa,#f3f3f3);
+    border: none;
+    padding: 18px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .section-header .chev {
+        transition: transform .2s ease;
+    }
+
+.section-body {
+    padding: 22px 20px 26px;
+}
+
+.task-section.collapsed .section-body {
+    display: none;
+}
+
+.task-section.collapsed .section-header .chev {
+    transform: rotate(-90deg);
+}
+
+/* sitne prilagodbe kartica u gridu na ovoj stranici */
+.task .btn {
+    margin-top: 8px;
+    width:150px;
+}
+
+/* responzivno */
+@media (max-width: 720px) {
+    .tasks-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-search {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
+
+/* Stil za dugmadi unutar kartice zadatka */
+.task-btns {
+    display: flex; /* Poravnavanje dugmadi u liniji */
+    gap: 10px; /* Razmak između dugmadi */
+    margin-top: 15px; /* Razmak između teksta i dugmadi */
+}
+
+    /* Stil za oba dugmadi */
+    .task-btns .btn {
+        background-color: #ff6b6b;
+        color: white;
+        padding: 12px 25px;
+        font-size: 1em;
+        border-radius: 4px;
+        text-align: center;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+        .task-btns .btn:hover {
+            background-color: #e55a5a;
+        }
+
+    /* Stil za sekundarno dugme - može imati drugu boju */
+    .task-btns .btn-secondary {
+        background-color: #444; /* Tamnija boja */
+    }
+
+        .task-btns .btn-secondary:hover {
+            background-color: #333;
+        }
+/* Modal (pop-up prozor) */
+.modal {
+    display: none; /* Početno je skriven */
+    position: fixed; /* Fiksira modal na ekranu */
+    z-index: 1; /* Osigurava da modal bude iznad ostalog sadržaja */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Poluprovidna pozadina */
+    overflow: auto; /* Omogućava skrolovanje ako sadržaj ne stane */
+    padding-top: 60px; /* Razmak od vrha ekrana */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%; /* Slobodno možeš povećati širinu modala */
+    max-width: 1200px; /* Povećaj maksimalnu širinu modala ako je potrebno */
+    text-align: center;
+}
+
+
+.proof-img {
+    width: 100%; /* Slika će zauzeti celu širinu roditeljskog elementa */
+    max-width: 1200px; /* Maksimalna širina slike (možeš promeniti po želji) */
+    height: auto; /* Visina se automatski prilagođava da bi se zadržale proporcije */
+    border-radius: 8px;
+}
+
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
