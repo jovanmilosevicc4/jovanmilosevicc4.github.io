@@ -1,0 +1,912 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C++ Zadaci – Moj Sajt</title>
+    <link href="appdata/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="omeni.html">O Meni</a></li>
+                <li><a href="pitprogramiranje.html">C# Igre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tasks-page container">
+        <h1 class="tasks-title">C++  Zadaci</h1>
+
+        <!-- Toolbar: pretraga + kratke prečice do sekcija -->
+        <div class="tasks-toolbar">
+            <input id="taskSearch" class="task-search" type="search" placeholder="Pretraži zadatke (npr. prosti, nizovi, funkcije)..." />
+            <div class="task-chips">
+                <a href="#osnove" class="chip">Prosti zadaci</a>
+                <a href="#nizovi" class="chip">Nizovi i strukture</a>
+                <a href="#stringovi" class="chip">Funkcije i klase</a>
+                <a href="#petlje" class="chip">Liste i text fajlovi</a>
+               
+
+            </div>
+        </div>
+
+        <!-- SEKCIJE (accordion stil) -->
+        <!-- 1. Osnove -->
+        <!-- 1. Osnove -->
+        <section id="osnove" class="task-section" data-title="osnove uvod promenljive tipovi">
+            <button class="section-header" type="button">
+                <span>Prosti zadaci (ulaz/izlaz, promenljive, tipovi)</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+
+                    <!-- Task 1 -->
+                    <!-- Zadaci 1-6 -->
+<article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+    <h3>Zadatak 1:</h3>
+    <p>Ispisati na ekranu cele brojeve između k i n.</p>
+
+    <div class="task-btns">
+        <a href="appdata/zadaci/Zadatak1.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+        <button class="btn btn-secondary" id="showProofBtn1">Dokaz</button>
+    </div>
+
+   
+</article>
+
+<!-- Modal za zadatak 1 -->
+<div id="proofModal1" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeProofBtn1">&times;</span>
+        <img src="appdata/slike zadataka/zdtk1.jpg" alt="Dokaz" class="proof-img">
+    </div>
+</div>
+
+
+                    <!-- Task 2 -->
+                    <article class="card task" data-tags="osnove sabiranje">
+                        <h3>Zadatak 2:</h3>
+                        <p>Program koji ispisuje onoliko parnih brojeva koliko korisnik unese.</p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak2.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn2">Dokaz</button>
+                        </div>
+
+                        
+                    </article>
+
+                    <!-- Proof Modal for Task 2 -->
+                    <div id="proofModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn2">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk2.jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+
+                    <!-- Task 3 -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 3:</h3>
+                        <p>
+                            Program koji sabira onoliko realnih brojeva(koje korisnik unosi) koliko korisnik trazi
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak3.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn3">Dokaz</button>
+                        </div>
+
+                       
+                    </article>
+
+                    <!-- Proof Modal for Task 3 -->
+                    <div id="proofModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn3">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk3.jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+
+                   
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 2. Nizovi -->
+        <section id="nizovi" class="task-section" data-title="nizovi array min max suma prosek">
+            <button class="section-header" type="button">
+                <span>Nizovi i strukture</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+
+                    <!-- Task 4 -->
+                    <!-- Zadaci 4-nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 4:</h3>
+                        <p>
+                            Formirati niz koji sadrzi 10 celih brojeva.
+                            U nizu upisati slucajne brojeve(na sve lokacije).
+                            Na ekranu ispisati sve clanove niza.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak4.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn4">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn4">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk4.jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 4 dopunna 1:</h3>
+                        <p>
+                            Odrediti najveci clan u nizu
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak5.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn5">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal5" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn5">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk4dop1ili5.jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 4 dopuna 2:</h3>
+                        <p>
+                            Formirati drugi niz tako da svaki clan novog niza bude k puta veci nego clan prvog niza.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak6.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn6">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal6" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn6">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk4dop2ili6.jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 5:</h3>
+                        <p>
+                            Formirati strukturu telefon gde se upisuju specifikacije pa uporediti samsung i iphone koji je bolji po memoriji
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak7.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn7">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal7" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn7">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk5.jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 6:</h3>
+                        <p>
+                            Formirati strukturu bazen koja ima podatke o duzini,sirini i dubini.
+                            Formiramo 2 promenljiva tipa bazen(Zikin i Mikin),unosimo podatke i odredjujemo ko ima veci bazen.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak8.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn8">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal8" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn8">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk6.jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 7:</h3>
+                        <p>
+                            Formirati niz duzine 10 clanova koji sadrzi podatke o bazenima.
+                            Sve dimenzije su random brojevi.
+                            Odrediti zapreminu veceg bazena.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak9.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn9">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal9" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn9">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk7(9).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 8:</h3>
+                        <p>
+                            Formirati strukturu radnik koja ima podatke o broju radnih sati i ceni po satu.Formiraju se 2 radnika (Mika i Zika).
+                            Unose se podaci za njih i odredjujemo ko ima vecu platu.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak10.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn10">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal10" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn10">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk8(10).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 9:</h3>
+                        <p>
+                            U nekom selu zivi 10 seljaka, svako od njih ima 1 njivu.
+                            Formirati strukturu njiva koja ima dimenziju,sirinu i duzinu.
+                            Formiramo niz sa 10 clanova strukture njiva.
+                            Sirine i duzine popunjavamo random.
+                            Koji seljak ima najvecu njivu.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak11.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn11">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal11" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn11">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk9(11).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 10:</h3>
+                        <p>
+                            Deda sprema drva za njivu, cepanice su u obliku valjka.
+                            Za svaku cepanicu deda je izmerio duzinu i precnik.
+                            Formirati strukturu cepanica i niz koji sadrzi podatke za 1000 cepanica.
+                            Dimenzije su u cm a odrediti koliko kubnih metara je spremljeno za zimu(duzina i precnik random).
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak12.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn12">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal12" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn12">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk10(12).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 11:</h3>
+                        <p>
+                            Formirati strukturu voz koja ima podatke o broju vagona i broju putnika po vagonu.
+                            Korisnik ucitava podatke o 2 voza Cira i Stira.
+                            Uz pomoc posebne funkcije odrediti koji voz moze da primi vise putnika.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak13.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn13">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal13" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn13">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk11(13).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Stringovi -->
+        <section id="stringovi" class="task-section" data-title="stringovi reci znakovi duzina">
+            <button class="section-header" type="button">
+                <span>Funkcije i klase</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+
+                    <!-- Task 1 -->
+                    <!-- Zadaci 1-6 -->
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 12:</h3>
+                        <p>
+                            Korisnik unosi 2 realna broja uz pomoc funkcije za uporedjivanje brojeva odrediti koji je broj manji
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak14.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn14">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal14" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn14">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk12(14).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 13:</h3>
+                        <p>
+                            Formirati klasu cetvorougao.
+                            Klasa ima privatne promenljive duzinu i sirinu i javne funkcije.
+                            1.Za dodeljivanje vrednosti
+                            2.Za izracunavanje povrsine
+                            Definisati jedan element klase(objekat), ucitati duzinu i sirinu i izracunati povrsinu.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak15.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn15">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal15" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn15">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk13(15).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 14:</h3>
+                        <p>
+                            Formirati klasu bazen sa 3 privatne promenljive duzina,sirina i dubina.
+                            Klasa ima funkcije za doeljivanje i za izracunavanje zapremine.
+                            Formirati Zikin i Mikin bazen i odrediti ko ima veci bazen.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak16.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn16">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal16" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn16">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk14(16).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 15:</h3>
+                        <p>
+                            Definisati klasu krug koja ima privatnu promenljivu poluprecnik i tri javne funkcije za
+                            1.Dodeljivanje poluprecnika
+                            2.Izracunavanje obima
+                            3.Za izracunavanje povrsine
+                            Definisati dva objekta, uneti poluprecnike i odrediti ko ima vecu povrsinu.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak17.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn17">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal17" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn17">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk15(17).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 16:</h3>
+                        <p>
+                            Koristeci istu klasu, formirati niz ciji su elementi objekti klase krug.
+                            Duzina niza 10 clanova.
+                            Niz popuniti sa random podacima za poluprecnik.
+                            Odrediti koji je najveci obim i na kojoj je lokaciji.
+                            Pre toga ispisati vrednosti svih poluprecnika u nizu (i obima i povrsina -1 clan u jednom redu).
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak18.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn18">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal18" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn18">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk16(18).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 17:</h3>
+                        <p>
+                            Formirati klasu drvo.
+                            Privatne su poluprecnik i duzina.
+                            Javne su dodeli, povrsina i zapremina.
+                            Formirati niz duzine 20.
+                            Popuniti rendom brojevima.
+                            Odrediti ukupnu zapreminu svih stabala(drveta) u nizu.
+                            Napomena:drvo ima oblik valjka - pa tako izracunati povrsinu i zapreminu.
+                        </p>
+
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak19.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                            <button class="btn btn-secondary" id="showProofBtn19">Dokaz</button>
+                        </div>
+
+
+                    </article>
+
+
+                    <div id="proofModal19" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeProofBtn19">&times;</span>
+                            <img src="appdata/slike zadataka/zdtk17(19).jpg" alt="Dokaz" class="proof-img">
+                        </div>
+                    </div>
+                    <!-- Task nez -->
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Petlje -->
+        <section id="petlje" class="task-section" data-title="petlje for while do-while">
+            <button class="section-header" type="button">
+                <span>Liste i text fajlovi</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body" />
+            <div class="grid" />
+
+            <!-- Task 1 -->
+            <!-- Zadaci 1-6 -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 18:</h3>
+                <p>
+                    Formirati listu koja sadrzi 10 celih brojeva.
+                    Ispisati sadrzaj liste na ekranu.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak20.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn20">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal20" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn20">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk18(20).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 19:</h3>
+                <p>
+                    isto kao prosli samo sto sad koristimo strukturu tacke.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak21.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn21">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal21" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn21">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk19(21).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 20:</h3>
+                <p>
+                    Formirati listu koja sadrzi 10 elemenata strukture.
+                    Strukture sadrzi ocene iz srpskog, matematike i fizickog.
+                    Sve ocene se generisu random.
+                    Kada se lista popuni ispisati je na ekranu.
+                    Odrediti ko ima najveci prosek i na kom mestu se nalazi taj clan
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak22.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn22">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal22" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn22">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk20(22).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 20 dopuna:</h3>
+                <p>
+                    0.Spisak sa ocenama
+                    1.Ako korisnik unese broj 1 omoguciti korisniku da menja clan na onoj poziciji koju on zeli- tada korisnik unese ocene ucenika i opet ispise spisak djaka.
+                    2.Ako korisnik unese broj 2 omoguciti dodavanje novog clana na kraj i opet se ispise ceo spisak
+                    3.Izlaz
+                    Kada god se izvrsi neka opcija opet se ispise ovaj menu sa opcijama od 0 do 3.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak23.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn23">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal23" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn23">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk20dopuna(23).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 21:</h3>
+                <p>
+                    Formirati tekstualni fajl koji sadrzi 10 celih celih brojeva koji su random upisani.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak24.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn24">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal24" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn24">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk21(24).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 21 dopuna:</h3>
+                <p>
+                    Odrediti najveci i najmanji clan u tekstualnom fajlu
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak25.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn25">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal25" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn25">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk21 dopuna (25).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 22:</h3>
+                <p>
+                    Na disku postoji tekstualni fajl u kome je upisan tekst.
+                    Procitati svaku rec teksta i upisati je u niz.
+                    Ispisati sve reci na ekran, svaka rec u posebnom redu.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak26.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn26">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal26" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn26">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk22(26).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 23:</h3>
+                <p>
+                    Na disku postoje 2 txt fajla, u svakom po 10 brojeva.
+                    Prvi broj iz prvog fajla sabrati sa prvim iz drugog i tako do 10tog broja.
+                    Zbir upisati u treci fajl i na ekranu.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak27.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn27">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal27" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn27">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk23(27).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 24:</h3>
+                <p>
+                    Formirati binarni fajl koji sadrzi podatke o 10 celih random brojeva.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak28.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn28">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal28" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn28">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk24(28).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 25:</h3>
+                <p>
+                    Formirati binarni fajl koji sadrzi podatke od 10 tacaka.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak29.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn29">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal29" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn29">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk25(29).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 25 dopuna 1:</h3>
+                <p>
+                    Odredi koja je tacka najbliza kordinantnom sistemu.
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak30.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn30">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal30" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn30">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk25 dopuna(30).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+            <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                <h3>Zadatak 25 dopuna 2:</h3>
+                <p>
+                    Korisnik unese broj K i na kraju binarnog fajla se doda jos K random tacaka,
+                    pa se sve tacke ispisu na ekranu!
+                </p>
+
+                <div class="task-btns">
+                    <a href="appdata/zadaci/Zadatak31.cpp" class="btn" target="_blank">Otvori zadatak</a>
+
+                    <button class="btn btn-secondary" id="showProofBtn31">Dokaz</button>
+                </div>
+
+
+            </article>
+
+
+            <div id="proofModal31" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProofBtn31">&times;</span>
+                    <img src="appdata/slike zadataka/zdtk25dopuna2(31).jpg" alt="Dokaz" class="proof-img">
+                </div>
+            </div>
+            <!-- Task nez -->
+        </section>
+
+
+      
+
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 – Sva prava zadržana.</p>
+    </footer>
+
+    <script>
+    // Accordion (otvori/zatvori sekcije)
+    document.querySelectorAll('.section-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const sec = btn.parentElement;
+        sec.classList.toggle('collapsed');
+      });
+    });
+
+    // Pretraga po naslovu/opisu/tagovima
+    const input = document.getElementById('taskSearch');
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      document.querySelectorAll('.task-section').forEach(section => {
+        // prikaži sekciju ako bilo koji task u njoj prolazi filter
+        let anyVisible = false;
+        section.querySelectorAll('.task').forEach(card => {
+          const text = (card.innerText + ' ' + (card.dataset.tags||'') + ' ' + (section.dataset.title||'')).toLowerCase();
+          const hit = q === '' || text.includes(q);
+          card.style.display = hit ? '' : 'none';
+          if (hit) anyVisible = true;
+        });
+        section.style.display = anyVisible ? '' : 'none';
+        // automatski otvori sekciju kad se pretražuje
+        if (q && section.classList.contains('collapsed')) section.classList.remove('collapsed');
+      });
+    });
+    </script>
+
+
+    <script src="appdata/functions.js"></script>
+</body>
+</html>
+
+
+
+
