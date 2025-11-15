@@ -536,12 +536,7 @@ footer {
 }
 
 
-.proof-img {
-    width: 100%; /* Slika će zauzeti celu širinu roditeljskog elementa */
-    max-width: 1200px; /* Maksimalna širina slike (možeš promeniti po želji) */
-    height: auto; /* Visina se automatski prilagođava da bi se zadržale proporcije */
-    border-radius: 8px;
-}
+
 
 
 .close {
@@ -599,9 +594,10 @@ footer {
 }
 
 .proof-img {
-    width: 100%;
-    max-width: 100%; /* Slika će popuniti celu širinu modala */
-    height: auto;
+    position:center;
+    width: 100%; /* Slika će zauzeti celu širinu roditeljskog elementa */
+    width: 1200px; /* Maksimalna širina slike (možeš promeniti po želji) */
+    height: auto; /* Visina se automatski prilagođava da bi se zadržale proporcije */
     border-radius: 8px;
 }
 
@@ -692,3 +688,4 @@ footer {
         .card .task-btns .btn-secondary:hover {
             background-color: #e5973d; /* Tamnija zlatna za "Dokaz" */
         }
+
