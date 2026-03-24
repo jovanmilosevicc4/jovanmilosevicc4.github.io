@@ -1,0 +1,846 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C++ Zadaci</title>
+    <link href="appdata/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">Portfolio</a>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="omeni.html">O Meni</a></li>
+                    <li><a href="pitprogramiranje.html">C# Igre</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tasks-page container">
+        <h1 class="tasks-title">C++ Zadaci</h1>
+
+        <div class="tasks-toolbar">
+            <input id="taskSearch" class="task-search" type="search" placeholder="Pretraži zadatke (npr. prosti, nizovi, funkcije)..." />
+            <div class="task-chips">
+                <a href="#osnove" class="chip">Prosti zadaci</a>
+                <a href="#nizovi" class="chip">Nizovi i strukture</a>
+                <a href="#stringovi" class="chip">Funkcije i klase</a>
+                <a href="#petlje" class="chip">Liste i text fajlovi</a>
+                <a href="#oop-klase" class="chip">OOP i Klase</a>
+                <a href="#izuzeci" class="chip">Izuzeci</a>
+                <a href="#nasledjivanje" class="chip">Nasledjivanje</a>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SEKCIJA 1: Prosti zadaci
+        ═══════════════════════════════════════════════════════ -->
+        <section id="osnove" class="task-section" data-title="osnove uvod promenljive tipovi">
+            <button class="section-header" type="button">
+                <span>Prosti zadaci (ulaz/izlaz, promenljive, tipovi)</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 1:</h3>
+                        <p>Ispisati na ekranu cele brojeve između k i n.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak1.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal1')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove sabiranje">
+                        <h3>Zadatak 2:</h3>
+                        <p>Program koji ispisuje onoliko parnih brojeva koliko korisnik unese.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak2.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal2')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 3:</h3>
+                        <p>Program koji sabira onoliko realnih brojeva (koje korisnik unosi) koliko korisnik traži.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak3.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal3')">Dokaz</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SEKCIJA 2: Nizovi i strukture
+        ═══════════════════════════════════════════════════════ -->
+        <section id="nizovi" class="task-section" data-title="nizovi array min max suma prosek">
+            <button class="section-header" type="button">
+                <span>Nizovi i strukture</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 4:</h3>
+                        <p>Formirati niz koji sadrži 10 celih brojeva. Upisati slučajne brojeve i ispisati sve članove niza.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak4.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal4')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 4 dopuna 1:</h3>
+                        <p>Odrediti najveći clan u nizu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak5.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal5')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 4 dopuna 2:</h3>
+                        <p>Formirati drugi niz tako da svaki clan novog niza bude k puta veći nego clan prvog niza.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak6.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal6')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 5:</h3>
+                        <p>Formirati strukturu telefon sa specifikacijama, pa uporediti Samsung i iPhone koji je bolji po memoriji.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak7.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal7')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 6:</h3>
+                        <p>Formirati strukturu bazen sa dužinom, širinom i dubinom. Formirati 2 bazena (Žikin i Mikin), uneti podatke i odrediti ko ima veći bazen.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak8.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal8')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 7:</h3>
+                        <p>Formirati niz od 10 bazena sa random dimenzijama. Odrediti zapreminu najvećeg bazena.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak9.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal9')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 8:</h3>
+                        <p>Formirati strukturu radnik sa radnim satima i cenom po satu. Formirati 2 radnika (Mika i Žika) i odrediti ko ima veću platu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak10.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal10')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 9:</h3>
+                        <p>U selu živi 10 seljaka, svako ima 1 njivu. Formirati strukturu njiva sa sirinom i dužinom (random). Koji seljak ima najveću njivu?</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak11.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal11')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 10:</h3>
+                        <p>Deda sprema drva — cepanice su valjci. Formirati strukturu cepanica i niz od 1000 cepanica (random). Odrediti koliko kubnih metara drva je pripremljeno.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak12.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal12')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove print">
+                        <h3>Zadatak 11:</h3>
+                        <p>Formirati strukturu voz sa brojem vagona i putnicima po vagonu. Korisnik unosi podatke za 2 voza (Ćira i Štira). Odrediti koji voz može da primi više putnika.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak13.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal13')">Dokaz</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SEKCIJA 3: Funkcije i klase
+        ═══════════════════════════════════════════════════════ -->
+        <section id="stringovi" class="task-section" data-title="stringovi reci znakovi duzina">
+            <button class="section-header" type="button">
+                <span>Funkcije i klase</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 12:</h3>
+                        <p>Korisnik unosi 2 realna broja. Uz pomoć funkcije za upoređivanje odrediti koji je broj manji.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak14.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal14')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 13:</h3>
+                        <p>Formirati klasu četvorougao sa privatnim promenljivama dužinom i širinom. Definisati funkcije za dodeljivanje vrednosti i izračunavanje površine.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak15.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal15')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 14:</h3>
+                        <p>Formirati klasu bazen sa 3 privatne promenljive (dužina, širina, dubina). Formirati Žikin i Mikin bazen i odrediti ko ima veći bazen.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak16.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal16')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 15:</h3>
+                        <p>Klasa krug sa privatnim poluprečnikom i funkcijama za dodeljivanje, računanje obima i površine. Dva objekta — odrediti ko ima veću površinu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak17.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal17')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 16:</h3>
+                        <p>Niz od 10 objekata klase krug sa random poluprečnicima. Ispisati sve vrednosti i odrediti koji krug ima najveći obim i na kojoj lokaciji se nalazi.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak18.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal18')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 17:</h3>
+                        <p>Klasa drvo (valjak) sa poluprečnikom i dužinom. Niz od 20 stabala sa random podacima. Odrediti ukupnu zapreminu svih stabala.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak19.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal19')">Dokaz</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SEKCIJA 4: Liste i text fajlovi
+        ═══════════════════════════════════════════════════════ -->
+        <section id="petlje" class="task-section" data-title="petlje for while do-while fajlovi liste">
+            <button class="section-header" type="button">
+                <span>Liste i text fajlovi</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 18:</h3>
+                        <p>Formirati listu koja sadrži 10 celih brojeva. Ispisati sadržaj liste na ekranu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak20.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal20')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 19:</h3>
+                        <p>Isto kao prošli zadatak, samo što se sada koristi struktura tačke.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak21.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal21')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 20:</h3>
+                        <p>Lista od 10 elemenata strukture sa ocenama iz srpskog, matematike i fizičkog (random). Ispisati listu i odrediti ko ima najveći prosek i na kom mestu se nalazi.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak22.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal22')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 20 dopuna:</h3>
+                        <p>Meni (0–3): ispisati spisak, promeniti ocene na zadatoj poziciji, dodati novog učenika na kraj. Nakon svake opcije ponovo ispisati meni.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak23.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal23')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 21:</h3>
+                        <p>Formirati tekstualni fajl koji sadrži 10 celih random brojeva.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak24.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal24')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 21 dopuna:</h3>
+                        <p>Odrediti najveći i najmanji clan u tekstualnom fajlu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak25.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal25')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 22:</h3>
+                        <p>Na disku postoji tekstualni fajl sa tekstom. Pročitati svaku reč i upisati je u niz. Ispisati sve reči na ekran, svaka reč u posebnom redu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak26.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal26')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 23:</h3>
+                        <p>Na disku postoje 2 txt fajla, u svakom po 10 brojeva. Sabrati prvi sa prvim, drugi sa drugim... Zbir upisati u treći fajl i ispisati na ekranu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak27.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal27')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 24:</h3>
+                        <p>Formirati binarni fajl koji sadrži podatke o 10 celih random brojeva.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak28.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal28')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 25:</h3>
+                        <p>Formirati binarni fajl koji sadrži podatke od 10 tačaka.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak29.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal29')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 25 dopuna 1:</h3>
+                        <p>Odrediti koja tačka je najbliža koordinatnom sistemu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak30.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal30')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="osnove ulaz izlaz sabiranje">
+                        <h3>Zadatak 25 dopuna 2:</h3>
+                        <p>Korisnik unese broj K — na kraj binarnog fajla se doda još K random tačaka, pa se sve tačke ispišu na ekranu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak31.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal31')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <!-- ── NOVI ZADACI 26–28 ── -->
+                    <article class="card task" data-tags="fajlovi tekst plate radnici">
+                        <h3>Zadatak 26:</h3>
+                        <p>Formirati tekstualni fajl sa brojem radnih sati za 10 radnika. Formirati drugi fajl koji sadrži plate radnika i ispisati ga na ekranu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak32.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal32')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="fajlovi binarni struktura radnik">
+                        <h3>Zadatak 27:</h3>
+                        <p>Isto kao zadatak 26, samo sa binarnim fajlovima i strukturom radnik.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak33.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal33')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="fajlovi loto brojevi frekvencija">
+                        <h3>Zadatak 28:</h3>
+                        <p>Tekstualni fajl sa 100 linija po 7 loto brojeva (1–39). Naći koji se broj najviše puta pojavio i ispisati sve linije u kojima se taj broj pojavljuje.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak34.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal34')">Dokaz</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SEKCIJA 5: OOP i Klase (29–40)
+        ═══════════════════════════════════════════════════════ -->
+        <section id="oop-klase" class="task-section" data-title="oop klase static konstruktor overload operator">
+            <button class="section-header" type="button">
+                <span>OOP i Klase (static, konstruktori, overload)</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+                    <article class="card task" data-tags="klasa static brojaс">
+                        <h3>Zadatak 29:</h3>
+                        <p>Formirati klasu "primer" koja ima jednu statičku promenljivu i funkciju brojač. Svaka statička promenljiva mora se inicijalizovati pre početka programa.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak35.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal35')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa static automobil gorivo">
+                        <h3>Zadatak 30:</h3>
+                        <p>Klasa "automobil" sa statičkom promenljivom "cenaGoriva" i funkcijom "izracunaj" koja računa koliko je goriva potrošeno za dati put i potrošnju.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak36.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal36')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa telo masa povrsina pritisak">
+                        <h3>Zadatak 31:</h3>
+                        <p>Klasa telo sa podacima o masi i površini i funkcijom pritisak koja računa pritisak koji telo vrši na podlogu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak37.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal37')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa balvan zapremina niz konstruktor">
+                        <h3>Zadatak 32:</h3>
+                        <p>Klasa balvan sa obimom osnove i visinom. Niz od 100 balvana (konstruktor). Odrediti zapreminu najvećeg balvana i ispisati ga na ekranu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak38.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal38')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa pravougaonik povrsina objekat">
+                        <h3>Zadatak 33:</h3>
+                        <p>Klasa pravougaonik sa 2 privatne promenljive (dužina i širina) i funkcijom za izračunavanje površine. Formirati jedan objekat i ispisati površinu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak39.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal39')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa radnik plata sati cena">
+                        <h3>Zadatak 34:</h3>
+                        <p>Klasa radnik sa privatnim promenljivama cena po satu i broj radnih sati. Formirati dva objekta i ispisati koji ima veću platu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak40.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal40')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa radnik niz random max plata">
+                        <h3>Zadatak 35:</h3>
+                        <p>Niz od 100 radnika sa random podacima. Odrediti maksimalnu platu u nizu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak41.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal41')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa valjak zapremina niz">
+                        <h3>Zadatak 36:</h3>
+                        <p>Klasa valjak sa obimom i visinom. Niz od 10 valjaka. Izračunati ukupnu zapreminu svih valjaka.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak42.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal42')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa overload saberi funkcija">
+                        <h3>Zadatak 37:</h3>
+                        <p>Formirati klasu 'saberi' koja ima overload funkciju sabiranja.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak43.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal43')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa vektor overload operator plus">
+                        <h3>Zadatak 38:</h3>
+                        <p>Klasa vektor sa x, y, z promenljivima. Overload operatora +. Formirati 2 objekta, sabrati ih i ispisati rezultat na ekranu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak44.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal44')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa voz overload operator sabiranje vagoni">
+                        <h3>Zadatak 39:</h3>
+                        <p>Klasa Voz sa brojem vagona i sedišta po vagonu. Overload operatora + — novi voz dobija zbir vagona i zbir sedišta.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak45.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal45')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="klasa voz overload operator mnozenje vagoni sedista">
+                        <h3>Zadatak 40:</h3>
+                        <p>Isto kao zadatak 39 sa operatorom * umesto +. Broj vagona se sabira, a sedišta po vagonu = ukupna sedišta / ukupan broj vagona.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak46.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal46')">Dokaz</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SEKCIJA 6: Izuzeci – Exception Handling (41–50)
+        ═══════════════════════════════════════════════════════ -->
+        <section id="izuzeci" class="task-section" data-title="izuzetak exception try catch throw">
+            <button class="section-header" type="button">
+                <span>Izuzeci (Exception Handling)</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+                    <article class="card task" data-tags="izuzetak deljenje realni brojevi">
+                        <h3>Zadatak 41:</h3>
+                        <p>Korisnik učitava dva realna broja. Uz pomoć funkcije deljenje vrši se deljenje i ispisuje rezultat, a generiše se izuzetak pri deljenju nulom.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak47.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal47')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="izuzetak godine provera punoletstvo">
+                        <h3>Zadatak 42:</h3>
+                        <p>Program pita koliko korisnik ima godina. Uz pomoć funkcije provera generiše se izuzetak ako je korisnik mlađi od 18 godina.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak48.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal48')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="izuzetak zbir prag sabiranje petlja">
+                        <h3>Zadatak 43:</h3>
+                        <p>Korisnik unosi cele brojeve. Kada zbir pređe vrednost X, funkcija sabiranje generiše izuzetak — ispisuje se trenutni zbir i program se prekida.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak49.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal49')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="izuzetak panj valjak zapremina while">
+                        <h3>Zadatak 44:</h3>
+                        <p>Korisnik unosi panjeve (obim i dužina valjka) sve dok ukupna zapremina ne pređe X³ m. Program tada ispisuje koliko je panjeva uneseno.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak50.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal50')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="izuzetak kredit rate oduzimanje while">
+                        <h3>Zadatak 45:</h3>
+                        <p>Korisnik unosi iznos kredita, a u while petlji uplaćuje rate. Funkcija oduzimanje računa ostatak. Kada se kredit isplati, generiše se izuzetak — ispisuje se broj rata.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak51.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal51')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="izuzetak parni neparn sabiranje while">
+                        <h3>Zadatak 46:</h3>
+                        <p>Korisnik unosi brojeve u while petlji — sabiraju se samo parni. Ako korisnik unese neparan broj, generiše se izuzetak i ispisuje trenutni zbir.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak52.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal52')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="izuzetak parovi veci broj sabiranje while">
+                        <h3>Zadatak 47:</h3>
+                        <p>Korisnik unosi parove brojeva u while petlji — sabira se veći od para. Ako su oba ista, funkcija baca izuzetak i program se završava.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak53.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal53')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="izuzetak tri broja najmanji while jednaki">
+                        <h3>Zadatak 48:</h3>
+                        <p>Korisnik unosi po 3 broja u while petlji — sabira se najmanji od trojke. Petlja se prekida kada su sva tri broja jednaka.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak54.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal54')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="izuzetak tri broja najmanji zbir jednaki">
+                        <h3>Zadatak 49:</h3>
+                        <p>Korisnik unosi 3 broja — sabira se najmanji od prethodnih. Ukoliko su svi brojevi jednaki, program se prekida.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak55.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal55')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="niz jednocifreni broj string konverzija int">
+                        <h3>Zadatak 50:</h3>
+                        <p>Program pita koliki je N, pa korisnik unosi N jednocifrenih brojeva u niz. Od znakova iz niza formirati jedan INT broj (npr. [5,4,3,2,1] → 54321).</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak56.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal56')">Dokaz</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SEKCIJA 7: Nasledjivanje i Apstraktne klase (51–64)
+        ═══════════════════════════════════════════════════════ -->
+        <section id="nasledjivanje" class="task-section" data-title="nasledjivanje apstraktna klasa interfejs virtuelna override">
+            <button class="section-header" type="button">
+                <span>Nasledjivanje, Apstraktne klase i Interfejsi</span>
+                <span class="chev">▾</span>
+            </button>
+            <div class="section-body">
+                <div class="grid">
+                    <article class="card task" data-tags="nasledjivanje izvedena klasa sabiranje">
+                        <h3>Zadatak 51:</h3>
+                        <p>Definisati klasu brojevi sa funkcijom za učitavanje. Napraviti izvedenu klasu koja vrši sabiranje unetih brojeva.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak57.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal57')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="nasledjivanje radnik menadzer bonus plata">
+                        <h3>Zadatak 52:</h3>
+                        <p>Klasa radnik sa imenom, osnovnom platom, unosom i ispisom. Izvedena klasa menadzer nasledjuje radnik i dodaje bonus, funkciju ukupne plate i ispis.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak58.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal58')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="nasledjivanje bankovni racun devizni kurs while">
+                        <h3>Zadatak 53:</h3>
+                        <p>Klasa bankovniRacun (stanje, uplata, isplata, ispis). Izvedena klasa devizniRacun dodaje kurs i ispis u evrima. U main-u uplate u while petlji dok iznos nije 0 — ispisuje se stanje oba računa.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak59.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal59')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="apstraktna klasa figura pravougaonik virtuelna">
+                        <h3>Zadatak 54:</h3>
+                        <p>Apstraktna klasa Figura sa virtuelnim funkcijama povrsina() i ucitavanje(). Klasa Pravougaonik implementira obje funkcije. U main-u kreirati objekat i pozvati funkcije.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak60.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal60')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="apstraktna klasa radnik programer sati cena plata">
+                        <h3>Zadatak 55:</h3>
+                        <p>Apstraktna klasa RADNIK sa virtuelnim funkcijama UCITAVANJE i PLATA. Klasa PROGRAMER implementira PLATA = sati × cena. U main-u kreirati objekat, učitati i ispisati platu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak61.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal61')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="apstraktna klasa student prosek osnovne master studije">
+                        <h3>Zadatak 56:</h3>
+                        <p>Apstraktna klasa STUDENT (UCITAVANJE, PROSEK, ISPIS). Klasa OSNOVNESTUDIJE (2 ocene, prosek), MASTERSTUDIJE (3 ocene, prosek). U main-u kreirati oba objekta i ispisati proseke.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak62.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal62')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="apstraktna klasa radnik prodavac menadzer procenat plata">
+                        <h3>Zadatak 57:</h3>
+                        <p>Apstraktna klasa RADNIK. Klasa PRODAVAC (plata = sati × cena), MENADZER (plata = sati × cena + bonus%). U main-u kreirati oba objekta, učitati i ispisati plate.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak63.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal63')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="interfejs oblik pravougaonik pokazivac dinamicki">
+                        <h3>Zadatak 58:</h3>
+                        <p>Interfejs oblik (apstraktna klasa) sa funkcijama za unos i površinu. Klasa Pravougaonik implementira interfejs. U main-u koristiti pokazivač na interfejs, dinamički kreirati objekat i ispisati površinu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak64.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal64')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="interfejs oblik pravougaonik krug izbor korisnik">
+                        <h3>Zadatak 59:</h3>
+                        <p>Dopuna zadatka 58. Klasa krug implementira interfejs. Korisnik bira (1=Pravougaonik, 2=Krug), unosi podatke i ispisuje površinu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak65.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal65')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="interfejs override delete memorija krug pravougaonik">
+                        <h3>Zadatak 60:</h3>
+                        <p>Isto kao zadatak 59 uz dodavanje ključne reči override na virtuelne funkcije i oslobađanje dinamičke memorije (delete).</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak66.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal66')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="zica rezanje komadi duzina optimizacija">
+                        <h3>Zadatak 61:</h3>
+                        <p>Korisnik unosi dužine komada žice i količine (N vrsta žice, N&lt;3). Žica se seče iz rolne dužine L. Program izračunava koliko rolni je ukupno potrebno.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak67.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal67')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="interfejs override student prosek osnovne master">
+                        <h3>Zadatak 62:</h3>
+                        <p>Isto kao zadatak 56, samo sa override ključnom reči i interfejsom umesto apstraktne klase.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak68.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal68')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="apstraktna klasa kula okrugla cetvrtasta zapremina interfejs">
+                        <h3>Zadatak 63:</h3>
+                        <p>Apstraktna klasa KULA (ucitavanje, zapremina, ispis). Izvedene klase OKRUGLA i CETVRTASTA kula — različite vrste osnove. Korisnik bira tip kule, unosi podatke i ispisuje zapreminu.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak69.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal69')">Dokaz</button>
+                        </div>
+                    </article>
+
+                    <article class="card task" data-tags="niz 5x5 matrica zemlja blato daske duzina">
+                        <h3>Zadatak 64:</h3>
+                        <p>Niz 5×5 popunjen random nulama (blato) i jedinicama (zemlja). a) Ispisati tabelu. b) Blato poplocati daskama — odrediti najdužu upotrebljenu dasku. c) Izbrojati dužine i količinu dasaka.</p>
+                        <div class="task-btns">
+                            <a href="appdata/zadaci/Zadatak70.cpp" class="btn" target="_blank">Otvori zadatak</a>
+                            <button class="btn btn-secondary" onclick="openModal('proofModal70')">Dokaz</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         MODALI – originalni (1–31)
+    ═══════════════════════════════════════════════════════════ -->
+    <div id="proofModal1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal1')">&times;</span><img src="appdata/slike zadataka/zdtk1.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal2')">&times;</span><img src="appdata/slike zadataka/zdtk2.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal3')">&times;</span><img src="appdata/slike zadataka/zdtk3.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal4" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal4')">&times;</span><img src="appdata/slike zadataka/zdtk4.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal5" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal5')">&times;</span><img src="appdata/slike zadataka/zdtk4dop1ili5.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal6" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal6')">&times;</span><img src="appdata/slike zadataka/zdtk4dop2ili6.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal7" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal7')">&times;</span><img src="appdata/slike zadataka/zdtk5.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal8" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal8')">&times;</span><img src="appdata/slike zadataka/zdtk6.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal9" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal9')">&times;</span><img src="appdata/slike zadataka/zdtk7(9).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal10" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal10')">&times;</span><img src="appdata/slike zadataka/zdtk8(10).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal11" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal11')">&times;</span><img src="appdata/slike zadataka/zdtk9(11).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal12" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal12')">&times;</span><img src="appdata/slike zadataka/zdtk10(12).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal13" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal13')">&times;</span><img src="appdata/slike zadataka/zdtk11(13).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal14" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal14')">&times;</span><img src="appdata/slike zadataka/zdtk12(14).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal15" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal15')">&times;</span><img src="appdata/slike zadataka/zdtk13(15).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal16" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal16')">&times;</span><img src="appdata/slike zadataka/zdtk14(16).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal17" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal17')">&times;</span><img src="appdata/slike zadataka/zdtk15(17).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal18" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal18')">&times;</span><img src="appdata/slike zadataka/zdtk16(18).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal19" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal19')">&times;</span><img src="appdata/slike zadataka/zdtk17(19).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal20" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal20')">&times;</span><img src="appdata/slike zadataka/zdtk18(20).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal21" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal21')">&times;</span><img src="appdata/slike zadataka/zdtk19(21).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal22" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal22')">&times;</span><img src="appdata/slike zadataka/zdtk20(22).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal23" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal23')">&times;</span><img src="appdata/slike zadataka/zdtk20dopuna(23).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal24" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal24')">&times;</span><img src="appdata/slike zadataka/zdtk21(24).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal25" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal25')">&times;</span><img src="appdata/slike zadataka/zdtk21 dopuna (25).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal26" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal26')">&times;</span><img src="appdata/slike zadataka/zdtk22(26).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal27" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal27')">&times;</span><img src="appdata/slike zadataka/zdtk23(27).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal28" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal28')">&times;</span><img src="appdata/slike zadataka/zdtk24(28).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal29" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal29')">&times;</span><img src="appdata/slike zadataka/zdtk25(29).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal30" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal30')">&times;</span><img src="appdata/slike zadataka/zdtk25 dopuna(30).jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal31" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal31')">&times;</span><img src="appdata/slike zadataka/zdtk25dopuna2(31).jpg" alt="Dokaz" class="proof-img"></div></div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         MODALI – novi zadaci (32–70, tj. zadaci 26–64)
+    ═══════════════════════════════════════════════════════════ -->
+    <div id="proofModal32" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal32')">&times;</span><img src="appdata/slike zadataka/26.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal33" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal33')">&times;</span><img src="appdata/slike zadataka/27.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal34" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal34')">&times;</span><img src="appdata/slike zadataka/28.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal35" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal35')">&times;</span><img src="appdata/slike zadataka/29.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal36" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal36')">&times;</span><img src="appdata/slike zadataka/30.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal37" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal37')">&times;</span><img src="appdata/slike zadataka/31.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal38" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal38')">&times;</span><img src="appdata/slike zadataka/32.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal39" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal39')">&times;</span><img src="appdata/slike zadataka/33.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal40" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal40')">&times;</span><img src="appdata/slike zadataka/34.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal41" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal41')">&times;</span><img src="appdata/slike zadataka/35.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal42" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal42')">&times;</span><img src="appdata/slike zadataka/36.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal43" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal43')">&times;</span><img src="appdata/slike zadataka/37.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal44" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal44')">&times;</span><img src="appdata/slike zadataka/38.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal45" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal45')">&times;</span><img src="appdata/slike zadataka/39.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal46" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal46')">&times;</span><img src="appdata/slike zadataka/40.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal47" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal47')">&times;</span><img src="appdata/slike zadataka/41.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal48" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal48')">&times;</span><img src="appdata/slike zadataka/42.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal49" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal49')">&times;</span><img src="appdata/slike zadataka/43.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal50" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal50')">&times;</span><img src="appdata/slike zadataka/44.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal51" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal51')">&times;</span><img src="appdata/slike zadataka/45.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal52" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal52')">&times;</span><img src="appdata/slike zadataka/46.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal53" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal53')">&times;</span><img src="appdata/slike zadataka/47.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal54" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal54')">&times;</span><img src="appdata/slike zadataka/48.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal55" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal55')">&times;</span><img src="appdata/slike zadataka/49.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal56" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal56')">&times;</span><img src="appdata/slike zadataka/50.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal57" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal57')">&times;</span><img src="appdata/slike zadataka/51.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal58" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal58')">&times;</span><img src="appdata/slike zadataka/52.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal59" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal59')">&times;</span><img src="appdata/slike zadataka/53.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal60" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal60')">&times;</span><img src="appdata/slike zadataka/54.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal61" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal61')">&times;</span><img src="appdata/slike zadataka/55.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal62" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal62')">&times;</span><img src="appdata/slike zadataka/56.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal63" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal63')">&times;</span><img src="appdata/slike zadataka/57.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal64" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal64')">&times;</span><img src="appdata/slike zadataka/58.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal65" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal65')">&times;</span><img src="appdata/slike zadataka/59.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal66" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal66')">&times;</span><img src="appdata/slike zadataka/60.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal67" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal67')">&times;</span><img src="appdata/slike zadataka/61.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal68" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal68')">&times;</span><img src="appdata/slike zadataka/62.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal69" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal69')">&times;</span><img src="appdata/slike zadataka/63.jpg" alt="Dokaz" class="proof-img"></div></div>
+    <div id="proofModal70" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proofModal70')">&times;</span><img src="appdata/slike zadataka/64.jpg" alt="Dokaz" class="proof-img"></div></div>
+
+    <footer>
+        <p>© 2025 – Sva prava zadržana.</p>
+    </footer>
+
+    <script src="appdata/script.js"></script>
+</body>
+</html>
