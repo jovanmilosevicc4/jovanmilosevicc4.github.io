@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moji Projekti</title>
+    <link href="appdata/style.css" rel="stylesheet" />
+    <style>
+        .projekti-page {
+            padding: 60px 0 80px;
+        }
+
+        .projekti-page .page-title {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .projekti-page .page-subtitle {
+            text-align: center;
+            color: var(--text-muted, #aaa);
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+        }
+
+        /* ── Project card ── */
+        .project-card {
+            background: var(--card-bg, #1a1a2e);
+            border: 1px solid var(--card-border, rgba(255,255,255,0.08));
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+        }
+
+        .project-logo-wrap {
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            min-height: 200px;
+        }
+
+        .project-logo-wrap img {
+            max-width: 100%;
+            max-height: 180px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .project-info {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .project-info h3 {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        .project-info p {
+            color: var(--text-muted, #aaa);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 4px 0;
+        }
+
+        .project-tag {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 20px;
+            padding: 3px 12px;
+            font-size: 0.78rem;
+            color: var(--accent, #64b5f6);
+        }
+
+        .project-btns {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: auto;
+            padding-top: 10px;
+        }
+
+        .btn-visit {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--accent, #64b5f6);
+            color: #000 !important;
+            font-weight: 700;
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn-visit:hover {
+            opacity: 0.85;
+        }
+
+        .btn-visit svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">Portfolio</a>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="pocetna1.html">C++ Zadaci</a></li>
+                    <li><a href="omeni.html">O Meni</a></li>
+                    <li><a href="pitprogramiranje.html">C# Igre</a></li>
+                    <li><a href="projekti.html" class="active">Moji Projekti</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="projekti-page">
+        <div class="container">
+            <h1 class="page-title">Moji Projekti</h1>
+            <p class="page-subtitle">Projekti koje sam napravio van škole.</p>
+
+            <div class="grid">
+
+                <!-- ── Projekat 1: StormZ ── -->
+                <div class="card project-card">
+                    <div class="project-logo-wrap">
+                        <img src="appdata/stormz.png" alt="StormZ logo">
+                    </div>
+                    <div class="project-info">
+                        <h3>StormZ</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Igrica</span>
+                            <span class="project-tag">Web</span>
+                        </div>
+                        <p>StormZ je projekat koji sam napravio – poseti sajt i saznaj više!</p>
+                        <div class="project-btns">
+                            <a href="https://stormz2026.github.io" target="_blank" class="btn btn-visit">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Poseti sajt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 – Sva prava zadržana.</p>
+    </footer>
+
+    <script src="appdata/script.js"></script>
+</body>
+</html>
